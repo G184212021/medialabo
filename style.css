@@ -1,0 +1,41 @@
+h1{
+    background-color:rgb(27, 199, 142);
+    margin-top: 20px;
+    padding-top: 12px;
+    padding-bottom: 0px;
+    height: 60px;
+    text-align: center;
+}
+
+h2{
+    margin: 50px 0px 0px 10px;
+}
+h3{
+    margin: 35px 0px 0px 15px;
+}
+p,a{
+    margin-left:20px;
+}
+
+.border{
+    border-bottom: solid;
+    width: 218px;
+}
+
+a:link{
+    color:rgb(255, 80, 80);
+}
+a:visited{
+    color:rgb(78, 134, 21);
+}
+a:hover{
+    color:dodgerblue;
+}
+
+.box{
+    width:600px;
+    height:400px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    padding-top: 15px;
+}
