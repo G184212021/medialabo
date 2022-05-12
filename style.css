@@ -23,10 +23,10 @@ p,a{
 }
 
 a:link{
-    color:rgb(255, 80, 80);
+    color:rgb(78, 134, 21);
 }
 a:visited{
-    color:rgb(78, 134, 21);
+    color:rgb(255, 80, 80);
 }
 a:hover{
     color:dodgerblue;
@@ -34,7 +34,7 @@ a:hover{
 
 .box{
     width:600px;
-    height:530px;
+    height:515px;
     border: 1px solid gray;
     box-sizing: border-box;
     padding-top: 15px;
