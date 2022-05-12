@@ -1,0 +1,46 @@
+table, td, th{
+    border: 1px rgb(231, 225, 225) solid;
+    border-collapse: collapse;
+}
+
+.v-align{
+    vertical-align: top;
+    width: 20px;
+}
+
+.bg-or{
+    background-color: rgb(196, 127, 0);
+    color: white;
+    font-size: 12px;
+}
+
+.bg-r{
+    background-color: red;
+    color: white;
+}
+
+th{
+    height: 50px;
+}
+
+.vertical{
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+}
+
+td{
+    height: 100px;
+    width: 150px;
+}
+
+tr{
+    text-align: center;
+}
+
+.square{
+    border: 1px transparent solid;
+    border-radius: 3px;
+    padding: 0px 7px 0px 6px;
+    margin-right: 5px;
+}
