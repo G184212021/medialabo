@@ -81,13 +81,8 @@ let data = {
 
 /////////////////// 課題3-2 はここから書き始めよう
 
-for(let d of data.list.g1){
-  console.log('id: ' + d.id);
-  console.log('event_id: ' + d.event_id);
-  console.log('start_time: ' + d.start_time);
-  console.log('end_time: ' + d.end_time);
-  console.log('area_id: ' + d.area.id);
-  console.log('area_name: ' + d.area.name);
+let ps = document.querySelector('p#data');
 
-  console.log('title: ' + d.title);
+for(let d of data.list.g1){
+  ps.textContent = d.g1;
 }
