@@ -81,8 +81,8 @@ let data = {
 
 /////////////////// 課題3-2 はここから書き始めよう
 
-let ps = document.querySelector('p#data');
+let th = document.querySelector('th#data');
 
 for(let d of data.list.g1){
-  ps.textContent = d.g1;
+  th.textContent = d.service;
 }
