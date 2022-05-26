@@ -34,8 +34,19 @@ a:hover{
 
 .box{
     width:600px;
-    height:515px;
+    height:880px;
     border: 1px solid gray;
     box-sizing: border-box;
     padding-top: 15px;
+}
+
+div.boxlist{
+    display: grid;
+    grid-template-rows:1fr;
+
+    grid-gap:10px;
+}
+
+div.bg-eme{
+    background-color:rgb(151, 197, 201);
 }

@@ -7,20 +7,36 @@
         <script src="tv-program.js" defer></script>
     </head>
     <body>
-        <h3><span class="square bg-r">1</span>総合</h3>
+
+        <div class="center mg">
+            <label>タイトル検索</label>
+            <input type="search" name="titlesearch" size="60" class="height">
+            <button id="search" class="blue size">検索</button>
+        </div>
+
+
+        <div class="flex">
+            <div>
+                <h3 class="mg"><span class="square bg-r">1</span>総合</h3>
+            </div>
+            <div>
+                <h3 class="mg"><span class="square bg-g">2</span>Eテレ</h3>
+            </div>
+        </div>
+
         <table>
-            <tr><th rowspan="10" class="v-align bg-or">午後２時</th><th>午後2:00~午後2:05</th></tr>
+            <tr><th rowspan="10" class="v-align bg-or">午後２時</th><th>午後2:00~午後2:05</th><th rowspan="2"></th></tr>
             <tr><td>ニュース・気象情報</td></tr>
-            <tr><th>午後2:05~午後2:35</th></tr>
-            <tr><td>日本ぶらり鉄道旅</td></tr>
+            <tr><th>午後2:05~午後2:35</th><th>午後2:15~午後2:50</th></tr>
+            <tr><td>日本ぶらり鉄道旅</td><td rowspan="5">新・日本の芸能</td></tr>
             <tr><th>午後2:35~午後2:49</th></tr>
             <tr><td>さわやか自然百景　選</td></tr>
             <tr><th>午後2:49~午後2:50</th></tr>
             <tr><td>明日への1min</td></tr>
-            <tr><th>午後2:50~午後3:00</th></tr>
-            <tr><td>時論公論</td></tr>
-            <tr><th rowspan="5" class="v-align bg-or">午後３時<tr><th>午後3:00~午後3:07</th></tr>
-            <tr><td>ニュース・気象情報</td></tr>
+            <tr><th>午後2:50~午後3:00</th><th>午後2:50~午後3:00</th></tr>
+            <tr><td>時論公論</td><td>おむずびニッポン</td></tr>
+            <tr><th rowspan="5" class="v-align bg-or">午後３時<tr><th>午後3:00~午後3:07</th><th>午後3:00~午後3:25</th></tr>
+            <tr><td>ニュース・気象情報</td><td rowspan="3">旅するためのドイツ語</td></tr>
             <tr><th>午後3:07~午後3:10</th></tr>
             <tr><td>明日が変わるトリセツショー</td></tr>
         </table>

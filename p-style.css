@@ -1,3 +1,8 @@
+h3.mg{
+    margin-left:55px;
+    margin-right:28px
+}
+
 table, td, th{
     border: 1px rgb(231, 225, 225) solid;
     border-collapse: collapse;
@@ -16,6 +21,11 @@ table, td, th{
 
 .bg-r{
     background-color: red;
+    color: white;
+}
+
+.bg-g{
+    background-color:rgb(58, 247, 184);
     color: white;
 }
 
@@ -43,4 +53,33 @@ tr{
     border-radius: 3px;
     padding: 0px 7px 0px 6px;
     margin-right: 5px;
+}
+
+button.blue{
+    background-color:cornflowerblue;
+    color:white;
+}
+
+div.flex{
+    display:flex;
+}
+
+div.center{
+    text-align: center;
+}
+
+div.mg{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+input.height{
+    padding: 0.5em 0.5em;
+    line-height: 1;
+    font-size: large;
+}
+
+button.size{
+    width: 80px;
+    height: 45px;
 }

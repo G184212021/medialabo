@@ -114,7 +114,16 @@ for(let d of data.list.g1){
   tr.insertAdjacentElement('afterend',tr1);
 
   tr1.insertAdjacentElement('beforeend',tdtitle);
+
   tr1.classList.add('tr');
 
+}
+
+let searchb = document.querySelector('button#search');
+searchb = addEventListener('click',search);
+
+function search() {
+  let searcht = document.querySelector('input[name="titlesearch"]');
+  let titles = searcht.value;
 }
 
