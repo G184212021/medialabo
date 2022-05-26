@@ -81,8 +81,40 @@ let data = {
 
 /////////////////// 課題3-2 はここから書き始めよう
 
-let th = document.querySelector('th#data');
+let table = document.querySelector('table#tb');
+
+let trdb = document.createElement('tr');
+let throws = document.createElement('th');
+
+table.insertAdjacentElement('beforeend',trdb);
+
+throws.textContent = 'Ｄａｔａｂａｓｅ';
+
+trdb.insertAdjacentElement('beforeend',throws)
+throws.setAttribute('rowspan','5');
+throws.classList.add('v-align');
+throws.classList.add('bg-or');
 
 for(let d of data.list.g1){
-  th.textContent = d.service;
+  let tdtitle = document.createElement('td');
+  let thtime = document.createElement('th');
+  let tr = document.createElement('tr');
+  let tr1 = document.createElement('tr');
+  let count = 0;
+
+  if(count === 0){
+    trdb.insertAdjacentElement('afterend',tr);
+  }
+
+  thtime.textContent = d.start_time;
+  tdtitle.textContent = d.title;
+
+  tr.insertAdjacentElement('beforeend',thtime);
+
+  tr.insertAdjacentElement('afterend',tr1);
+
+  tr1.insertAdjacentElement('beforeend',tdtitle);
+  tr1.classList.add('tr');
+
 }
+
