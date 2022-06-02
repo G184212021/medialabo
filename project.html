@@ -5,13 +5,19 @@
         <title>NHK番組表(自作)</title>
         <link rel="stylesheet" href="p-style.css">
         <script src="tv-program.js" defer></script>
+        <script src="project-ajax.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     </head>
     <body>
 
         <div class="center mg">
-            <label>タイトル検索</label>
-            <input type="search" name="titlesearch" size="60" class="height">
-            <button id="search" class="blue size">検索</button>
+            <label>チャンネル</label>
+            <input type="search" id="k" name="key" size="30" class="height" placeholder="チャンネル">
+
+            <label>ジャンル</label>
+            <input type="search" id="k2" name="key2" size="30" class="height" placeholder="ジャンル">
+
+            <button id="sch" class="blue size">検索</button>
         </div>
 
 
@@ -26,19 +32,19 @@
 
         <table>
             <tr><th rowspan="10" class="v-align bg-or">午後２時</th><th>午後2:00~午後2:05</th><th rowspan="2"></th></tr>
-            <tr><td>ニュース・気象情報</td></tr>
+            <tr><td id="g1" value="0000">ニュース・気象情報</td></tr>
             <tr><th>午後2:05~午後2:35</th><th>午後2:15~午後2:50</th></tr>
-            <tr><td>日本ぶらり鉄道旅</td><td rowspan="5">新・日本の芸能</td></tr>
+            <tr><td id="g1" value="1000">日本ぶらり鉄道旅</td><td rowspan="5" id="e1" value="0903">新・日本の芸能</td></tr>
             <tr><th>午後2:35~午後2:49</th></tr>
-            <tr><td>さわやか自然百景　選</td></tr>
+            <tr><td id="g1" value="0800">さわやか自然百景　選</td></tr>
             <tr><th>午後2:49~午後2:50</th></tr>
-            <tr><td>明日への1min</td></tr>
+            <tr><td id="g1" value="0000">明日への1min</td></tr>
             <tr><th>午後2:50~午後3:00</th><th>午後2:50~午後3:00</th></tr>
-            <tr><td>時論公論</td><td>おむずびニッポン</td></tr>
+            <tr><td id="g1" value="0000">時論公論</td><td id="e1" value="0205">おむずびニッポン</td></tr>
             <tr><th rowspan="5" class="v-align bg-or">午後３時<tr><th>午後3:00~午後3:07</th><th>午後3:00~午後3:25</th></tr>
-            <tr><td>ニュース・気象情報</td><td rowspan="3">旅するためのドイツ語</td></tr>
+            <tr><td id="g1" value="0000">ニュース・気象情報</td><td rowspan="3" id="e1" value="1000">旅するためのドイツ語</td></tr>
             <tr><th>午後3:07~午後3:10</th></tr>
-            <tr><td>明日が変わるトリセツショー</td></tr>
+            <tr><td id="g1" value="0502">明日が変わるトリセツショー</td></tr>
         </table>
 
         <table id="tb"></table>

@@ -29,6 +29,11 @@ table, td, th{
     color: white;
 }
 
+.bg-b{
+    background-color:cornflowerblue;
+    color:white;
+}
+
 th{
     height: 50px;
 }
@@ -80,6 +85,15 @@ input.height{
 }
 
 button.size{
+    margin-top: 10px;
     width: 80px;
     height: 45px;
+}
+
+label{
+    color: white;/*文字色*/
+    background-color: crimson;
+    border: solid 3px crimson;/*線色*/
+    padding: 0.5em;/*文字周りの余白*/
+    border-radius: 0.5em;/*角丸*/
 }

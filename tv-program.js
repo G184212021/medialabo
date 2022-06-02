@@ -80,7 +80,6 @@ let data = {
 };
 
 /////////////////// 課題3-2 はここから書き始めよう
-
 let table = document.querySelector('table#tb');
 
 let trdb = document.createElement('tr');
@@ -117,13 +116,5 @@ for(let d of data.list.g1){
 
   tr1.classList.add('tr');
 
-}
-
-let searchb = document.querySelector('button#search');
-searchb = addEventListener('click',search);
-
-function search() {
-  let searcht = document.querySelector('input[name="titlesearch"]');
-  let titles = searcht.value;
 }
 
