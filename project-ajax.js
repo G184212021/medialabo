@@ -1,13 +1,9 @@
 let searchb = document.querySelector('button#sch');
 searchb.addEventListener('click',sendRequest);
 
+let count = 0;
+
 function sendRequest() {
-
-  let count = 0;
-
-  if(count > 0){
-    db.remove();
-  }
 
   let e = document.querySelector('input[name="key"]');
   let key = e.value;
@@ -17,17 +13,26 @@ function sendRequest() {
 
   let url = 'https://www.nishita-lab.org/web-contents/jsons/nhk/' + key + '-' + key2 + '-j.json';
 
+  count += 1;
+
+  console.log(count);
+
   axios.get(url)
       .then(showResult)
       .catch(showError)
       .then(finish);
 
-  count += 1;
-
 }
 
 //通信成功
 function showResult(resp){
+
+  if(count > 1){
+    db.remove();
+    console.log('remove');
+  }
+
+  console.log(count);
 
   let data = resp.data;
 
@@ -77,7 +82,6 @@ function showResult(resp){
 
     if(count === 0){
       trdb.insertAdjacentElement('afterend',tr);
-      tr.id = 'db';
     }
 
     thtime.textContent = d.start_time;
@@ -85,15 +89,9 @@ function showResult(resp){
 
     tr.insertAdjacentElement('beforeend',thtime);
 
-    thtime.id = 'db';
-
     tr.insertAdjacentElement('afterend',tr1);
 
-    tr1.id = 'db';
-
     tr1.insertAdjacentElement('beforeend',tdtitle);
-
-    tdtitle.id = 'db';
 
     tr1.classList.add('tr');
 
