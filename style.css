@@ -10,9 +10,15 @@ h1{
 h2{
     margin: 50px 0px 0px 10px;
 }
+
 h3{
     margin: 35px 0px 0px 15px;
 }
+
+h4{
+    margin: 50px 0px 0px 10px;
+}
+
 p,a{
     margin-left:20px;
 }
@@ -34,7 +40,7 @@ a:hover{
 
 .box{
     width:600px;
-    height:880px;
+    height:925px;
     border: 1px solid gray;
     box-sizing: border-box;
     padding-top: 15px;
